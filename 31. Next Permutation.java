@@ -1,9 +1,29 @@
 // 31. Next Permutation
+
+// Approach:
+
+// Step 1 --
+// a[i]<a[i+1]
+// idx1=i
+// break
+
+// Step 2 ---
+// a[idx1]<a[i]
+// idx2=i
+// break
+
+// step 3 ---
+// swap
+
+// step 4 ---
+// sort(am idx1+1, n);
+
 class Solution {
     public void nextPermutation(int[] nums) {
 
         int n = nums.length;
         if(n<=1) return;
+        
         int idx1=-1;
         for(int i=n-2; i>=0;i--){
            if(nums[i]<nums[i+1]){
