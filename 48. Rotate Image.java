@@ -1,6 +1,6 @@
 // Approach
 // step 1: Transpose -> columns to rows and vice versa
-// step 2: Reverse each array
+// step 2: Reverse each row
 
 class Solution {
     public void rotate(int[][] matrix) {
